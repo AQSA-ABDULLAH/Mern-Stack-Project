@@ -1,3 +1,4 @@
+const dotenv = reqquire("dotenv");
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
