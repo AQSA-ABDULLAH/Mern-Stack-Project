@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
 
-const DB = 'mongodb+srv://aqsaabdullah38403:WXrxhGCabHa4XNco@cluster0.pmhf3cw.mongodb.net/mernstack?retryWrites=true&w=majority'
+const DB = 'mongodb://127.0.0.1/mern-stack-project'
 mongoose.connect(DB, ).then(() => {
     console.log(`connection successful`);
 }).catch((err) => console.log(`no connection`));
