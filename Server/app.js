@@ -9,6 +9,10 @@ mongoose.connect(DB, ).then(() => {
     console.log(`connection successful`);
 }).catch((err) => console.log(`no connection`));
 
+app.use(express.json());
+
+app.use(require('./router/auth'))
+
 
 //Middelware
 const middleware = (req, res, next) => {
