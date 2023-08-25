@@ -40,6 +40,6 @@ app.get('/Signup', (req, res) => {
     res.send("Hello its a SignUp page")
 })
 
-app.listen(3000, () => {
+app.listen(4000, () => {
     console.log(`server is runnig`)
 })
